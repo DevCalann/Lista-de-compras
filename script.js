@@ -63,3 +63,10 @@ function editItem(index) {
     renderLista();
   }
 }
+
+// Adicionar o evento "keydown" para o campo de input
+document.getElementById('item').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    addItem(); // Chama a função de adicionar o item
+  }
+});
